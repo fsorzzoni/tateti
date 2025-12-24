@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta Te Ti</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="grid-container">
+        <div class="grid" data-row="0" data-col="0"></div>
+        <div class="grid" data-row="0" data-col="1"></div>
+        <div class="grid" data-row="0" data-col="2"></div>
+        <div class="grid" data-row="1" data-col="0"></div>
+        <div class="grid" data-row="1" data-col="1"></div>
+        <div class="grid" data-row="1" data-col="2"></div>
+        <div class="grid" data-row="2" data-col="0"></div>
+        <div class="grid" data-row="2" data-col="1"></div>
+        <div class="grid" data-row="2" data-col="2"></div>
+    </div>
+    <div class="misc-container">
+        <div class="players">
+            <div id="name1"></div>
+            <div id="name2"></div>
+            <div id="x">X</div>
+            <div id="y">O</div>
+        </div>
+        <div class="buttons">
+            <button id="restart">Restart</button>
+            <button id="new-game-btn">New Game</button>
+        </div>
+        <div class="turn">
+            <div>Turn:</div>
+            <div class="turn-indicator"></div>
+        </div>
+    </div>
+</div>
+<dialog id="new-game">
+    <form method="dialog">
+        <label>
+            X Player
+            <input type="text" name="player-x" required>
+        </label>
+        <label>
+            O Player
+            <input type="text" name="player-o" required>
+        </label>
+        <button>Start Game</button>
+    </form>
+</dialog>
+<dialog id="finished-game">
+    <div></div>
+    <button id="continue">Continue</button>
+</dialog>
+</body>
+</html>
